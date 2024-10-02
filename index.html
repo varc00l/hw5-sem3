@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Виберіть напій</h2>
+<div class="form-group">
+    <select id="drinkSelect">
+        <option value="">-- Виберіть напій --</option>
+        <option value="Кава">Кава</option>
+        <option value="Чай">Чай</option>
+        <option value="Сік">Сік</option>
+    </select>
+    <p id="drinkMessage"></p>
+</div>
+
+<h2>Перевірте день тижня</h2>
+<div class="form-group">
+    <input type="text" id="dayInput" placeholder="Введіть день тижня">
+    <button onclick="checkDay()">Перевірити</button>
+    <p id="dayMessage"></p>
+</div>
+
+<h2>Перевірте пору року</h2>
+<div class="form-group">
+    <input type="number" id="monthInput" placeholder="Введіть номер місяця">
+    <button onclick="checkSeason()">Перевірити</button>
+    <p id="seasonMessage"></p>
+</div>
+
+<h2>Кількість днів у місяці</h2>
+<div class="form-group">
+    <input type="number" id="monthDaysInput" placeholder="Введіть номер місяця">
+    <button onclick="checkDaysInMonth()">Перевірити</button>
+    <p id="daysInMonthMessage"></p>
+</div>
+
+<h2>Світлофор</h2>
+<div class="form-group">
+    <input type="text" id="colorInput" placeholder="Введіть колір">
+    <button onclick="checkTrafficLight()">Перевірити</button>
+    <p id="colorMessage"></p>
+</div>
+
+<h2>Калькулятор</h2>
+<div class="form-group">
+    <input type="number" id="number1" placeholder="Число 1">
+    <input type="number" id="number2" placeholder="Число 2">
+    <select id="operationSelect">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Рахувати</button>
+    <p id="calcMessage"></p>
+</div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
